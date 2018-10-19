@@ -1,13 +1,39 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/components/components"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "微信程序",
-    "navigationBarTextStyle": "black"
-  }
+    "navigationBarBackgroundColor": "#FD7F42",
+    "navigationBarTitleText": "云微集",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "微内容",
+        "iconPath": "image/home3_normal.png",
+        "selectedIconPath": "image/home3_press.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "旗舰品牌",
+        "iconPath": "image/card2_normal.png",
+        "selectedIconPath": "image/card2_press.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "操盘手",
+        "iconPath": "image/home_normal.png",
+        "selectedIconPath": "image/home_press.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
