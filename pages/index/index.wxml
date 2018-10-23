@@ -1,13 +1,49 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="mic-content">
+  <view class="tools-title">| 营销工具</view>
+  <view class="tools-items">
+    <view class="tools-item">
+      <view><image src="../../image/card1_normal.png" class="tools-item-child"></image></view>
+      <text>策划方案</text>
+    </view>
+    <view class="tools-item">
+      <view><image src="../../image/fb1_normal.png" class="tools-item-child"></image></view>
+      <text>形象打造</text>
+    </view>
+    <view class="tools-item">
+      <view><image src="../../image/fb2_normal.png" class="tools-item-child"></image></view>
+      <text>团队管理</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="marketing-title">| 微营销</view>
+  <view class="marketing-content">
+    <text class="title">{{marketingTitle}}</text>
+    <text class="content">{{marketingContent}}</text>
+    <text bindtap="fullText" class="full-text">{{fullTextTitle}}</text>
   </view>
+
+  <view class="active-title">| 微动态</view>
+  <block wx:for="{{activeArr}}">
+    <view class='head'>
+      <image src="{{item.headUrl}}" class='head-img'></image>
+      <view class='head-intro'>
+        <text class='name'>{{item.name}}</text>
+        <text class='brief'>{{item.brief}}</text>
+      </view>
+    </view>
+    <view class='main'>
+      <view class='fl-box'></view>
+      <view class='main-intro'>
+        <text class='content'>{{item.content}}</text>
+        <image src='{{item.imgUrl}}' class='img-url'>{{item.imgUrl}}</image>
+      </view>
+    </view>
+    <view class="operation">
+      <view class='fl-box'></view>
+      <text class='time'>{{item.releaseTime}}</text>
+      <view class='thumbs-up'><icon type="success" size="20" color="#0099CC" style='vertical-align:bottom;'/>{{item.thumbsNumber}}</view>
+      <view class='share'><icon type="info" size="20" color="#FF0033" style='vertical-align:bottom;'/>{{item.shareNumber}}</view>
+    </view>
+  </block>
 </view>

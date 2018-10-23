@@ -4,16 +4,38 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello Emfan!',
+    marketingTitle: '微营销标题微营销标题微营销标题微营销标题微营销标题微营销标题？',
+    marketingContent: '微营销内容(微营销内',
+    fullTextTitle: '查看全部',
+    activeArr: [{
+      headUrl: '../../image/kfzx1_normal.png',
+      name: '廖小井',
+      brief: '韩夏创始人、星辰国际团团长',
+      content: '微动态内容，微动态内容微微动态内容微，营销内容微动态内容，微动态内容微动态内容。微动态内容，微动态内容微微动态内容微，营销内容微动态内容，微动态内容微动态内容。',
+      imgUrl:  '../../image/kfzx1_normal.png',
+      releaseTime: '3小时前',
+      thumbsNumber: '4455',
+      shareNumber: '1234'
+    }],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  fullText: function(ev) {
+    if(this.data.fullTextTitle === '查看全部'){
+      this.data.marketingContent = '微营销内容(微营销内容微营销内容微营销内容微营销内容微营销内容微营销内容微营销内容微营销内容微营销内容微营销内容微营销内容)'
+      this.setData({
+        marketingContent: this.data.marketingContent,
+        fullTextTitle: '收起全部'
+      })
+    }else if(this.data.fullTextTitle === '收起全部'){
+      this.data.marketingContent = '微营销内容(微营销内'
+      this.setData({
+        marketingContent: this.data.marketingContent,
+        fullTextTitle: '查看全部'
+      })
+    }
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

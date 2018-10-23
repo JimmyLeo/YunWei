@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/brand/brand",
+    "pages/home/home"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,13 +19,13 @@
         "selectedIconPath": "image/home3_press.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/brand/brand",
         "text": "旗舰品牌",
         "iconPath": "image/card2_normal.png",
         "selectedIconPath": "image/card2_press.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/home/home",
         "text": "操盘手",
         "iconPath": "image/home_normal.png",
         "selectedIconPath": "image/home_press.png"
