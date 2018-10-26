@@ -65,6 +65,12 @@ Page({
       })
     }
   },
+  // 转发
+  onShareAppMessage(res){
+    return {
+      title: '云微'
+    }
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

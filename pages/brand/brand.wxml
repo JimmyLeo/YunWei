@@ -1,2 +1,23 @@
 <!--pages/brand/brand.wxml-->
-<text>pages/brand/brand.wxml</text>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class='swiper'>
+  <block wx:for="{{imgUrls}}" wx:key="banner">
+    <swiper-item class="banner-item">
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="card-small-swiper">
+  <view class='title'>
+    <text class='title-main'>最新入驻</text>
+    <text class='title-subtitle'>Recent Staioned</text>
+  </view>
+  <!-- <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}">
+    <block wx:for="{{imgUrls}}" wx:key="banner">
+      <swiper-item class="banner-item">
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper> -->
+</view>

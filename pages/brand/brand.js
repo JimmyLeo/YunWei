@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    indicatorDots: false,
+    autoplay: true,
+    circular: true,
+    interval: 5000,
+    duration: 1000,
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ]
   },
 
   /**
@@ -47,7 +56,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    this.setData({
+      indicatorDots: true
+    })
+    wx.stopPullDownRefresh();
   },
 
   /**

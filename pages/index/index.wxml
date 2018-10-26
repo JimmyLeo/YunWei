@@ -24,7 +24,7 @@
   </view>
 
   <view class="active-title">| 微动态</view>
-  <block wx:for="{{activeArr}}">
+  <block wx:for="{{activeArr}}" wx:key="active_info">
     <view class='head'>
       <image src="{{item.headUrl}}" class='head-img'></image>
       <view class='head-intro'>

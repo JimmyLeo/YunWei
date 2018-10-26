@@ -1,1 +1,26 @@
 /* pages/brand/brand.wxss */
+.swiper{
+  margin-top: 20rpx;
+  height: 200rpx;
+}
+.swiper .banner-item{
+  text-align: center;
+}
+.swiper .banner-item image{
+  border-radius: 15rpx;
+  width: 90%;
+  height: 100%;
+}
+.card-small-swiper{
+  padding: 20rpx 5% 0;
+}
+.card-small-swiper .title{
+  font-size: 32rpx;
+}
+.card-small-swiper .title .title-main{
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.card-small-swiper .title .title-subtitle{
+  color: #ccc;
+}
