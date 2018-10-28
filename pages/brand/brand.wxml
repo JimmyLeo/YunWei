@@ -12,12 +12,24 @@
     <text class='title-main'>最新入驻</text>
     <text class='title-subtitle'>Recent Staioned</text>
   </view>
-  <!-- <swiper indicator-dots="{{indicatorDots}}"
+  <swiper indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}">
-    <block wx:for="{{imgUrls}}" wx:key="banner">
+      <block wx:for="{{cards}}" wx:key="card">
       <swiper-item class="banner-item">
-        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        <view class='card-item'>
+          <view>
+            <image src="{{item.head_img}}"></image>
+            <view>
+              <text>{{item.name}}</text>
+              <text>{{item.intro}}</text>
+            </view>
+          </view>
+          <view>
+            <switch checked="{{item.swit}}" bindchange="switch1Change"/>
+          </view>
+          <view></view>
+        </view>
       </swiper-item>
-    </block>
-  </swiper> -->
+    </block> 
+  </swiper> 
 </view>

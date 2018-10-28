@@ -14,9 +14,18 @@ Page({
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ]
+    ],
+    cards: [{
+      head_img: '../../image/shop2_press.png',//头像图片
+      name: '廖小井',  //名称
+      intro: '韩夏创始人、新城集团团长', //简介
+      tags: ['品牌创始人', '创业先锋'],  //标签
+      swit: true   //开关
+    }]
   },
-
+  switch1Change: function (e) {
+    console.log('switch1 发生 change 事件，携带值为', e.detail.value)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
