@@ -1,2 +1,15 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class='container'>
+  <view class='card'>
+  </view>
+  <view class='progress-content'>
+    <progress percent="60" border-radius="200" color="yellow" active class='progress' stroke-width="16"/>
+    <button class='btn'>签到</button>
+  </view>
+  <view class='pv'>
+    <text class='pv-title'>最近访客</text>
+    <block wx:key="pv" wx:for="{{pvArr}}">
+      <image src="{{item}}"></image>
+    </block>
+  </view>
+</view>

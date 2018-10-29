@@ -68,7 +68,8 @@ Page({
   // 转发
   onShareAppMessage(res){
     return {
-      title: '云微'
+      title: '云微',
+      imageUrl: '../../image/biaoqing.jpg'
     }
   },
   getUserInfo: function(e) {
@@ -78,5 +79,8 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onPullDownRefresh(){
+    wx.stopPullDownRefresh();
   }
 })

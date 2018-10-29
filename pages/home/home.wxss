@@ -1,1 +1,52 @@
 /* pages/home/home.wxss */
+.container{
+  height: 500rpx;
+  background-color: #FD7F42;
+  padding: 30rpx 30rpx 20rpx;
+}
+.container .card{
+  height: 300rpx;
+  width: 100%;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+.container .progress-content{
+  width: 100%;
+  height: 70rpx;
+  overflow: hidden;
+  padding-top: 20rpx;
+}
+.container .progress{
+  width: 75%;
+  float: left;
+  margin-top:10rpx;
+}
+.container .btn{
+  width: 20%;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 25rpx;
+  float: right;
+  color: #fff;
+  background-color: #CC6600;
+  border-color: #CC6600;
+}
+.container .pv{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.container .pv .pv-title{
+  float: left;
+  color: #fff;
+  font-size: 30rpx;
+  margin-top:10rpx
+}
+.container .pv image{
+  width:60rpx;
+  height:60rpx;
+  float: right;
+  background: #fff;
+  margin-left: 15rpx;
+  border-radius: 15rpx;
+}

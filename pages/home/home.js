@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    pvArr: ['../../image/fb1_normal.png', '../../image/fb1_press.png', '../../image/fb2_normal.png']
   },
 
   /**

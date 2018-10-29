@@ -11,20 +11,53 @@
   width: 90%;
   height: 100%;
 }
-.card-small-swiper{
+.card-scroll{
   padding: 20rpx 5% 0;
 }
-.card-small-swiper .title{
+.card-scroll .title{
   font-size: 32rpx;
+  margin-bottom: 20rpx;
 }
-.card-small-swiper .title .title-main{
+.card-scroll .title .title-main{
   font-weight: bold;
   margin-right: 10rpx;
 }
-.card-small-swiper .title .title-subtitle{
+.card-scroll .title .title-subtitle{
   color: #ccc;
 }
-.card-small-swiper .card-item{
+.card-scroll .card-items{
   width: 100%;
-  height: 100%; 
+  white-space: nowrap;
+}
+.card-scroll .card-item{
+  display: inline-block;
+    /* padding: 300rpx 300rpx; */
+  width: 350rpx;
+  height: 350rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #ccc;
+  border-radius: 10rpx;
+}
+.most-popular{
+  padding: 20rpx 5% 0;
+}
+.most-popular .title{
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+.most-popular .title .title-main{
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.most-popular .title .title-subtitle{
+  color: #ccc;
+}
+.most-popular .popular-item{
+  width:100%;
+  height: 300rpx;
+  background: #ccc;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
 }

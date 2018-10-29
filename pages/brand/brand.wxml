@@ -7,29 +7,37 @@
     </swiper-item>
   </block>
 </swiper>
-<view class="card-small-swiper">
+<view class="card-scroll">
   <view class='title'>
     <text class='title-main'>最新入驻</text>
     <text class='title-subtitle'>Recent Staioned</text>
   </view>
-  <swiper indicator-dots="{{indicatorDots}}"
-    autoplay="{{autoplay}}" interval="{{interval}}">
-      <block wx:for="{{cards}}" wx:key="card">
-      <swiper-item class="banner-item">
-        <view class='card-item'>
+  <scroll-view scroll-x="true" class="card-items">
+    <block wx:for="{{cards}}" wx:key="card">
+      <view class='card-item'>
+        <!-- <view>
+          <image src="{{item.head_img}}"></image>
           <view>
-            <image src="{{item.head_img}}"></image>
-            <view>
-              <text>{{item.name}}</text>
-              <text>{{item.intro}}</text>
-            </view>
+            <text>{{item.name}}</text>
+            <text>{{item.intro}}</text>
           </view>
-          <view>
-            <switch checked="{{item.swit}}" bindchange="switch1Change"/>
-          </view>
-          <view></view>
         </view>
-      </swiper-item>
-    </block> 
-  </swiper> 
+        <view>
+          <switch checked="{{item.swit}}" bindchange="switch1Change"/>
+        </view>
+        <view></view> -->
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+<view class='most-popular'>
+  <view class='title'>
+    <text class='title-main'>品牌主推</text>
+    <text class='title-subtitle'>Most Popular</text>
+  </view>
+  <block wx:for="{{populars}}" wx:key="popular">
+    <view class='popular-item'>
+    </view>
+  </block>
 </view>

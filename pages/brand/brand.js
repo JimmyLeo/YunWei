@@ -9,7 +9,7 @@ Page({
     autoplay: true,
     circular: true,
     interval: 5000,
-    duration: 1000,
+    duration: 100,
     imgUrls: [
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
@@ -21,7 +21,8 @@ Page({
       intro: '韩夏创始人、新城集团团长', //简介
       tags: ['品牌创始人', '创业先锋'],  //标签
       swit: true   //开关
-    }]
+    }, {}, {}, {}, {}],
+    populars: [{}, {}, {}]
   },
   switch1Change: function (e) {
     console.log('switch1 发生 change 事件，携带值为', e.detail.value)
