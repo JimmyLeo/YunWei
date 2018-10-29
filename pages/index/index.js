@@ -9,14 +9,23 @@ Page({
     fullTextTitle: '查看全部',
     activeArr: [{
       headUrl: '../../image/kfzx1_normal.png',
-      name: '廖小井',
+      name: '廖小井222',
       brief: '韩夏创始人、星辰国际团团长',
       content: '微动态内容，微动态内容微微动态内容微，营销内容微动态内容，微动态内容微动态内容。微动态内容，微动态内容微微动态内容微，营销内容微动态内容，微动态内容微动态内容。',
       imgUrl:  '../../image/kfzx1_normal.png',
       releaseTime: '3小时前',
       thumbsNumber: '4455',
       shareNumber: '1234'
-    }],
+    }, {
+        headUrl: '../../image/kfzx1_normal.png',
+        name: '廖小井',
+        brief: '韩夏创始人、星辰国际团团长',
+        content: '微动态内容，微动态内容微微动态内容微，营销内容微动态内容，微动态内容微动态内容。微动态内容，微动态内容微微动态内容微，营销内容微动态内容，微动态内容微动态内容。',
+        imgUrl: '../../image/kfzx1_normal.png',
+        releaseTime: '3小时前',
+        thumbsNumber: '4455',
+        shareNumber: '1234'
+      }],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

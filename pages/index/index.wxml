@@ -40,7 +40,6 @@
       </view>
     </view>
     <view class="operation">
-      <view class='fl-box'></view>
       <text class='time'>{{item.releaseTime}}</text>
       <view class='thumbs-up'><icon type="success" size="20" color="#0099CC" style='vertical-align:bottom;'/>{{item.thumbsNumber}}</view>
       <view class='share'><icon type="info" size="20" color="#FF0033" style='vertical-align:bottom;'/>{{item.shareNumber}}</view>

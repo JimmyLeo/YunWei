@@ -73,11 +73,10 @@
 .main .fl-box{
   float: left;
   width: 80rpx;
-  height: 1rpx;
   margin-right: 20rpx;
 }
 .main .main-intro{
-  float: left;
+  float: right;
   width: 590rpx;
 }
 .main .main-intro .content{
@@ -93,19 +92,13 @@
   padding: 0 30rpx;
   overflow: hidden;
 }
-.operation .fl-box{
-  float: left;
-  width: 80rpx;
-  height: 80rpx;
-  margin-right: 20rpx;
-}
 .operation .time{
   font-size: 28rpx;
   color: #999;
+  margin-left:100rpx;
 }
 .operation .thumbs-up, .operation .share{
   float: right;
   font-size: 30rpx;
   margin-right: 20rpx;
-  margin-top: 15rpx;
 }
